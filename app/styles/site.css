@@ -1,18 +1,18 @@
 
 @font-face {
     font-family:"BrusherRegular";
-    src: url("./fonts/Brusher-Regular.ttf") 
+    src: url("https://rawgit.com/codejets/butter/master/app/styles/fonts/Brusher-Regular.ttf") 
 }
 
 header {
-	border-bottom: 1px solid #e0e6ed;
+    border-bottom: 1px solid #e0e6ed;
     background: white;
     height: 62px;
     line-height: 62px;
 }
 
 header .logo {
-	/*transition: fill 0.3s ease-in-out;*/
+    /*transition: fill 0.3s ease-in-out;*/
     /*height: 30px;*/
     /*top: 50%;*/
     margin: 0 0 0 35px;
@@ -25,7 +25,7 @@ header .logo span {
 }
 
 .component-card:hover .component-card-cover {
-	
+    
     transition-timing-function: ease-in-out;
     transition-duration: 300ms;
     transition-property: opacity;
@@ -33,15 +33,15 @@ header .logo span {
     background-color: rgba(31,45,61,0.98);
 }
 .component-card {
-	position: relative;
+    position: relative;
 }
 
 .component-card-cover {
-	opacity: 0;
-	position: absolute;
+    opacity: 0;
+    position: absolute;
 }
 .component-card-cover {
-	top: 0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -51,10 +51,10 @@ header .logo span {
 
 
 .image-container {
-	height: 200px;
+    height: 200px;
 }
 
 .image-container img {
-	height: 100%;
+    height: 100%;
 }
 

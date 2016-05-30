@@ -6,15 +6,15 @@
             $stateProvider
                 .state('overview', {
                     url: "/overview",
-                    templateUrl: "app/pages/overview.html"
+                    templateUrl: "https://rawgit.com/codejets/butter/master/app/pages/overview.html"
                 })
                 .state('components', {
                     url: "/components",
-                    templateUrl: "app/pages/components.html"
+                    templateUrl: "https://rawgit.com/codejets/butter/master/app/pages/components.html"
                 })
                 .state('download', {
                     url: "/download",
-                    templateUrl: "app/pages/download.html"
+                    templateUrl: "https://rawgit.com/codejets/butter/master/app/pages/download.html"
                 });
 
 
@@ -72,13 +72,13 @@
         .directive("navbar", function() {
             return {
                 restrict: "E",
-                templateUrl: "app/sections/navbar.html"
+                templateUrl: "https://rawgit.com/codejets/butter/master/app/sections/navbar.html"
             };
         })
         .directive("typo", function() {
             return {
                 restrict: "E",
-                templateUrl: "app/sections/typo.html"
+                templateUrl: "https://rawgit.com/codejets/butter/master/app/sections/typo.html"
             };
         });
 
