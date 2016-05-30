@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family:"BrusherRegular";
+    src: url("./fonts/Brusher-Regular.ttf") 
+}
+
+header {
+	border-bottom: 1px solid #e0e6ed;
+    background: white;
+    height: 62px;
+    line-height: 62px;
+}
+
+header .logo {
+	/*transition: fill 0.3s ease-in-out;*/
+    /*height: 30px;*/
+    /*top: 50%;*/
+    margin: 0 0 0 35px;
+}
+
+header .logo span {
+    font-family: 'Brusher', sans-serif;
+    font-size: 32px;
+    color: #1EAEDB;
+}
+
+.component-card:hover .component-card-cover {
+	
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    transition-property: opacity;
+    opacity: 1;
+    background-color: rgba(31,45,61,0.98);
+}
+.component-card {
+	position: relative;
+}
+
+.component-card-cover {
+	opacity: 0;
+	position: absolute;
+}
+.component-card-cover {
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    margin: auto;
+}
+
+
+.image-container {
+	height: 200px;
+}
+
+.image-container img {
+	height: 100%;
+}
+
