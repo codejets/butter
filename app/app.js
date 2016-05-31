@@ -62,6 +62,7 @@
             that.toggleMobileMenu = toggleMobileMenu;
         };
 
+
     angular.module('butter', [
             'ui.router', 'hljs', 'ngAnimate'
         ])
