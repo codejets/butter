@@ -1,7 +1,9 @@
 (function withAngular(angular) {
     'use strict';
 
-    var ConfigFunction = function($locationProvider, $stateProvider, $urlRouterProvider, hljsServiceProvider) {
+    var ConfigFunction = function($locationProvider, $stateProvider, $urlRouterProvider, hljsServiceProvider, $sceDelegateProvider) {
+            $sceDelegateProvider.resourceUrlWhitelist(['self', new RegExp('^(http[s]?):\/\/(w{3}.)?youtube\.com/.+$')]);
+
             $urlRouterProvider.otherwise("/overview");
             $stateProvider
                 .state('overview', {
@@ -65,7 +67,7 @@
     angular.module('butter', [
             'ui.router', 'hljs', 'ngAnimate'
         ])
-        .config(['$locationProvider', '$stateProvider', '$urlRouterProvider', 'hljsServiceProvider', ConfigFunction])
+        .config(['$locationProvider', '$stateProvider', '$urlRouterProvider', 'hljsServiceProvider', '$sceDelegateProvider', ConfigFunction])
         .run(RunFunction)
         .controller('HomeController', ['$scope', '$location', '$window', HomeController])
 
