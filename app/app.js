@@ -2,7 +2,7 @@
     'use strict';
 
     var ConfigFunction = function($locationProvider, $stateProvider, $urlRouterProvider, hljsServiceProvider, $sceDelegateProvider) {
-            $sceDelegateProvider.resourceUrlWhitelist(['self', new RegExp('^(http[s]?):\/\/(w{3}.)?youtube\.com/.+$')]);
+            $sceDelegateProvider.resourceUrlWhitelist(['self', new RegExp('^(http[s]?):\/\/(w{3}.)?rawgit\.com/.+$')]);
 
             $urlRouterProvider.otherwise("/overview");
             $stateProvider
